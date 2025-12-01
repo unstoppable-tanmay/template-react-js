@@ -1,5 +1,8 @@
+import { useTheme } from "@/providers/theme-provider";
+
 const App = () => {
-  return <div>App</div>;
+  const { theme } = useTheme();
+  return <div>App {theme}</div>;
 };
 
 export default App;

@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
+import About from "./pages/about";
+import App from "./pages/app";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
-  { path: "/about", element: <div className="p-4">About Page</div> },
+  { path: "/about", element: <About /> },
 ]);
 
 export default function AppRouter() {
